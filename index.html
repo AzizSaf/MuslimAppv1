@@ -1,0 +1,252 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/2 Projects/2 Number 2/style.css">
+  <!--
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  -->
+  <title>Muslim App</title>
+</head>
+<body>
+  <!--  -->
+  <div class="NavBar">
+  
+    <img class="user_img" src="/source/user.png">
+    <span class="app_logo">الصفحة الرئيسية</span>
+    <div class="menu">
+  
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+  
+    </div>
+  
+  </div>
+  <!--  -->
+  <div class="menu_box">
+    
+    <div class="logo">MUSLIM</div>
+    <div class="user_img2">
+      <img src="/source/user.png">
+      <input type="file" accept="image"
+      onchange="changeimg(this)">
+    </div>
+    <hr>
+    <div class="menu_items">
+      
+      <div class="home_btn">الصفحة الرئيسية</div>
+      <div class="adkar_btn">الأذكار
+        </div>
+      <div class="quran_btn">القرآن الكريم</div>
+   
+    </div>
+    <hr>
+    <div class="menu_items_2">
+      
+      <div class="tasabih_btn">التسابيح</div>
+      <div class="ahadit_btn">الأحاديث</div>
+      <div class="tafasir_btn">التفاسير</div>
+      
+    </div>
+    
+  </div>
+  <!--  -->
+  <div class="Main">
+    <!--  -->
+    <div class="Home">
+    
+      <div class="clock">
+    
+        <div class="clock_box">
+    
+          <div class="time">
+    
+            <span>الوقت الآن</span>
+            <div class="time_box"></div>
+            <span><!-- Date --></span>
+    
+          </div>
+          <div class="weather">
+            
+            <img src="/source/night.png">
+            <img src="/source/day.png">
+            
+          </div>
+    
+        </div>
+    
+      </div>
+    
+      <div class="time_pray">
+       
+        <div class="time_pray_title">
+          أوقات الصلاة
+        </div>
+        <div class="next_pary">
+          
+          <div class="next_pary_title">
+            الصلاة القادمة
+          </div>
+          <div dir="rtl" class="next_pary_info">
+            
+            <span class="nx_name"></span>
+            <span class="nx_time"></span>
+            <audio class="adan" controls>
+              <source src="https://cdn.aladhan.com/audio/adhans/a1.mp3" type="audio/mp3">
+            </audio>
+            
+          </div>
+          
+        </div>
+        <div class="time_pray_box">
+          
+          <div dir="rtl" class="T_salat">
+           
+            <span>الفجر</span>
+            <span class="fajr"></span>
+            <img class="noActive1" src="/source/noActive.png">
+            <img class="active1" src="/source/Active.png">
+            
+          </div>
+          <hr>
+          <div dir="rtl" class="T_salat">
+          
+            <span>الظهر</span>
+            <span class="dohr"></span>
+            <img class="noActive2" src="/source/noActive.png">
+            <img class="active2" src="/source/Active.png">
+            
+          </div>
+          <hr>
+          <div dir="rtl" class="T_salat">
+          
+            <span>العصر</span>
+            <span class="al3ast"></span>
+            <img class="noActive3" src="/source/noActive.png">
+            <img class="active3" src="/source/Active.png">
+          
+          </div>
+          <hr>
+          <div dir="rtl" class="T_salat">
+          
+            <span>المغرب</span>
+            <span class="ma4rib"></span>
+            <img class="noActive4" src="/source/noActive.png">
+            <img class="active4" src="/source/Active.png">
+          
+          </div>
+          <hr>
+          <div dir="rtl" class="T_salat">
+          
+            <span>العشاء</span>
+            <span class="al3icha2"></span>
+            <img class="noActive5" src="/source/noActive.png">
+            <img class="active5" src="/source/Active.png">
+          
+          </div>
+
+        </div>
+
+        
+      </div>
+      
+    </div>
+    <!--  -->
+    <div class="Adkar">
+     
+      <div class="adkar_menu">
+
+        <div class="ad_ms">أذكار المساء</div>
+        <div class="ad_sb">أذكار الصباح</div>
+        
+      </div>
+      <!--  -->
+      <div class="adkar_box">
+        
+        <div class="ad_sb_box"></div>
+        <div class="ad_ms_box"></div>
+        
+      </div>
+     
+    </div>
+    <!--  -->
+    <div class="quran">
+      
+      <div dir="rtl" class="quran_logo">
+        
+        <img src="/source/quran.png">
+        <p dir="rtl">استمع للقرآن</p>
+        <p dir="rtl">الكريم مع القارئ</p>
+        <p dir="rtl">الذي تريد.</p>
+        
+      </div>
+      
+      <div class="quran_items"> 
+        
+        <div class="search_box">
+          
+          <form class="ayat_box">
+            <select dir="rtl" class="ayat_div">
+            </select>
+            <button type="button">اختر</button>
+          </form>
+          <form class="kora2_box">
+            <select dir="rtl" class="kora2_div">
+            </select>
+          </form>
+          
+        </div>
+        
+        <div class="aya_palyer">
+         
+          <div class="aya_tools">
+            
+            <audio class="aya_audio" controls>
+              <source class="aya_source">
+            </audio>
+              
+            <div class="play">شغل</div>
+            <div class="pause">قف</div>
+            
+          </div>
+          
+        </div>
+        
+        
+       
+      </div>
+      
+    </div>
+    <!--  -->
+    <div class="tasabih">
+      
+      <div class="tasabih_box"></div>
+      
+    </div>
+    <!--  -->
+    <div class="alahadit"></div>
+    <!--  -->
+    <div class="tafasir">
+      
+      <div class="tafasir_tool">
+        
+        <form>
+          <select class="tafasir_items">
+          </select>
+        </form>
+        <button onclick="fun()">اختر</button>
+        
+      </div>
+      <div class="tafasir_box"></div>
+      
+    </div>
+    <!--  -->
+  </div>
+  
+</body> <!-- dir="rtl" -->
+<script src="/2 Projects/2 Number 2/script.js"></script>
+</html>

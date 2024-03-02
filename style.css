@@ -1,0 +1,793 @@
+:root {
+  --white: #DFE3EE;
+  --red: #EF316D;
+  --black: #3A3134;
+  --blue: #0B1629;
+  --blue2: #0B285B;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--blue);
+}
+divm {
+  outline: 1px solid red;
+}
+.NavBar {
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.NavBar span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--white);
+  position: relative;
+  top: 10px;
+  font-family: 'Amiri', serif;
+}
+.user_img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6%;
+  top: 27px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.menu {
+  position: absolute;
+  right: 6%;
+  top: 30px;
+}
+.div1 {
+  width: 25px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative; 
+}
+.div2 {
+  width: 25px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-top: 3px;
+}
+.div3 {
+  width: 25px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-top: 3px;
+  transition: 0.3s;
+  position: relative;
+}
+.menu_box {
+  width: 50%;
+  height: 100vh;
+  background: #FFFFFF0A;
+  background: var(--blue2);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: -50%;
+  z-index: 11;
+  overflow: hidden;
+}
+.logo {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Amiri', serif;
+}
+.user_img2 {
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_img2 img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 20px 10px 20px 10px;
+}
+.user_img2 input {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+}
+.menu_items {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_items div {
+  width: 75%;
+  height: 45px;
+  background: var(--blue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-family: 'Amiri', serif;
+}
+.menu_items_2 {
+  width: 100%;
+  height: 220px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_items_2 div {
+  width: 75%;
+  height: 45px;
+  background: var(--blue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-family: 'Amiri', serif;
+}
+.Home {
+  width: 100vw;
+  height: 91vh;
+  display: inline-block;
+}
+.clock {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock_box {
+  width: 80%;
+  height: 85%;
+  background: var(--blue2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.time {
+  width: 40%;
+  height: 75%;
+  background: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  filter: drop-shadow(0 0 5px #00000082)
+}
+.time span:first-child {
+  top: 4px;
+  color: var(--blue);
+  position: absolute;
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.time_box {
+  width: 100%;
+  height: 30px;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.time span:last-child {
+  position: absolute;
+  bottom: 7px;
+  font-size: 0.9rem;
+  color: var(--black);
+  font-family: 'Amiri', serif;
+}
+.weather {
+  width: 45%;
+  height: 85%;
+  background: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 7%;
+  filter: drop-shadow(0 0 5px #00000082)
+}
+.weather img:last-child {
+  display: none;
+}
+.time_pray {
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  font-family: 'Amiri', serif;
+}
+.next_pary {
+  width: 60%;
+  height: 100px;
+  background: var(--blue2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Amiri', serif;
+}
+.time_pray_title {
+  width: 70%;
+  height: 55px;
+  background: var(--blue2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Amiri', serif;
+}
+.adan {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+.next_pary_title {
+  width: 100%;
+  height: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #FFFFFF14;
+  font-family: 'Amiri', serif;
+}
+.next_pary_info {
+  width: 100%;
+  height: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.time_pray_box {
+  width: 70%;
+  height: 310px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background:var(--blue2);
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+.T_salat {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.T_salat span {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: 'Amiri', serif;
+}
+.T_salat img {
+  height: 25px;
+  width: 25px;
+}
+.T_salat img:last-child {
+  display: none;
+}
+hr {
+  background: var(--white);
+  width: 50%;
+  position: relative;
+  left: 25%;
+  opacity: 0.2;
+}
+
+/* adkar */
+
+.Adkar {
+  width: 100vw;
+  height: 91vh;
+  display: none;
+}
+.adkar_menu {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+.ad_sb {
+  width: 100px;
+  height: 50px;
+  background: var(--red);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: 'Amiri', serif;
+}
+.ad_ms {
+  width: 100px;
+  height: 50px;
+  background: var(--white);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  font-family: 'Amiri', serif;
+}
+.adkar_box {
+  width: 100%;
+  height: 580px;
+  background: transparent;
+  margin-top: 20px;
+}
+.ad_sb_box {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: grid;
+  grid-auto-flow: row;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+.dikr_div {
+  width: 100vw;
+  height: auto;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.dikr_con {
+  background: var(--blue2);
+  width: 88%;
+  height: auto;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px 15px 40px 15px;
+}
+.dikr_count {
+  width: 100px;
+  height: 40px;
+  background: var(--white);
+  color: var(--blue);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-family: 'Amiri', serif;
+}
+.ad_ms_box {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: none;
+  grid-auto-flow: row;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+.quran {
+  width: 100vw;
+  height: 91vh;
+  overflow: hidden;
+  display: none;
+}
+.quran_logo {
+  width: 80%;
+  height: 150px;
+  background: var(--blue2);
+  border-radius: 30px;
+  position: relative;
+  left: 10%;
+  margin-top: 50px;
+}
+.quran_logo img {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(0 0px 20px #222);
+  position: absolute;
+  left: -30px;
+  top: -30px;
+}
+.quran_logo p {
+  position: relative;
+  right: 20px;
+  top: 13%;
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px #000;
+  font-family: 'Amiri', serif;
+}
+.quran_items {
+  width: 100%;
+  height: 520px;
+  background: transparent;
+  overflow: hidden;
+}
+.search_box {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: transparent;
+}
+.ayat_box {
+  width: 80%;
+  height: 60px;
+  background: var(--blue2);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px 20px 0 0;
+}
+.ayat_box button {
+  width: 70px;
+  height: 35px;
+  background: var(--white);
+  color: var(--blue);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.ayat_div {
+  width: 120px;
+  height: 35px;
+  background: var(--white);
+  color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px 0 0;
+  outline: none;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+.aya_items {
+  color: var(--blue);
+}
+.kora2_box {
+  width: 80%;
+  height: 60px;
+  background: var(--blue2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+.kora2_div {
+  width: 150px;
+  height: 35px;
+  background: var(--white);
+  color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px 0 0;
+  outline: none;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+.aya_palyer {
+  width: 100%;
+  height: 300px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aya_tools {
+  width: 80%;
+  height: 200px;
+  background: var(--blue2);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+}
+.aya_audio {
+  position: absolute;
+  width: 80%;
+  top: 30px;
+}
+.play {
+  width: 23%;
+  height: 40px;
+  background: var(--white);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25%;
+  right: 20%;
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.pause {
+  width: 23%;
+  height: 40px;
+  background: var(--white);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+  color: var(--blue);
+  font-family: 'Amiri', serif;
+  font-size: 1.1rem;
+}
+.aya_audio::-webkit-media-controls-current-time-display {
+  color: #606060;
+}
+.tasabih {
+  width: 100vw;
+  height: 91vh;
+  background: transparent;
+  display: none;
+}
+.tasabih_box {
+  width: 100%;
+  height: 98%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.tasabih_div {
+  width: 90%;
+  height: 200px;
+  background: var(--blue2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+}
+.tasabih_span {
+  text-align: center;
+  color: var(--white);
+  font-size: 1.1rem;
+}
+.tasabih_time {
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--blue);
+  position: relative;
+  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Amiri', serif;
+  font-size: 1.1rem;
+}
+.alahadit {
+  width: 100vw;
+  height: 91vh;
+  background: transparent;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.hadit_div {
+  width: 90%;
+  height: auto;
+  background: var(--blue2);
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.tafasir {
+  width: 100vw;
+  height: 91vh;
+  background: transparent;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.tafasir_tool {
+  width: 70%;
+  height: 80px;
+  background: var(--blue2);
+  border-radius: 10px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tafasir_items {
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 7%;
+  bottom: 25%;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--blue);
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.tafasir_tool button {
+  position: absolute;
+  right:7%;
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 40px;
+  background: var(--white);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: 'Amiri', serif;
+}
+.tafasir_box {
+  width: 90%;
+  height: 580px;
+  background: transparent;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+.aya_text {
+  color: var(--blue);
+  background: var(--white);
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+}
+.aya_tafsir {
+  color: var(--white);
+  background: var(--blue2);
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.adan_message {
+  width: 80%;
+  height: 20%;
+  background: var(--white);
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 100;
+  border-radius: 10px;
+}
+.adan_message div:first-child {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.adan_pause {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+.adan_message span {
+  width: 100px;
+  height: 40px;
+  background: var(--blue2);
+  color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
